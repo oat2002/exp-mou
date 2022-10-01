@@ -30,5 +30,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.23/dist/sweetalert2.all.min.js"></script>
     <link href="assets/css/pages/login/classic/login-4.css" rel="stylesheet" type="text/css"/>
 
+    <script href="assets/js/bootstrap-datepicker-thai.js"></script>
+    <script href="assets/js/bootstrap-datepicker.th.js" type="text/javascript"></script>
+
 <!--    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />-->
 </head>

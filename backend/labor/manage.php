@@ -4,11 +4,11 @@
             <h3 class="card-label"><?php echo $_GET["title"];?></h3>
         </div>
         <div class="card-toolbar">
-            <a href="officer" class="btn btn-primary font-weight-bolder mb-5">
+            <a href="labor" class="btn btn-primary font-weight-bolder mb-5">
                 <span class="svg-icon svg-icon-md"><i class="flaticon2-fast-back"></i></span>ย้อนกลับ</a>
         </div>
     </div>
-    <form method="post" action="backend/officer/query.php" onsubmit="return chkPassword()">
+    <form method="post" action="backend/labor/query.php">
         <div class="card-body">
             <input type="hidden" name="path" value="<?php echo $GLOBALS['path'];?>">
             <?php
@@ -37,13 +37,17 @@
                         ?>
                     </select>
                 </div>
-                <div class="col-5">
+                <div class="col-4">
                     <label>ชื่อ</label>
                     <input type="text" name="name" class="form-control" value="<?php if (isset($_GET["user_id"])) {echo $assoc["first_name"];} ?>" placeholder="ชื่อ" required/>
                 </div>
-                <div class="col-5">
+                <div class="col-4">
                     <label>นามสกุล</label>
                     <input type="text" name="lastName" class="form-control" value="<?php if (isset($_GET["user_id"])) {echo $assoc["last_name"];} ?>" placeholder="นามสกุล" required/>
+                </div>
+                <div class="col-2">
+                    <label>วัน/เดือน/ปีเกิด</label>
+                    <input type="text" class="form-control datepicker" data-provide="datepicker" data-date-language="th-th" name="createDateSafe">
                 </div>
             </div>
             <div class="form-group row">

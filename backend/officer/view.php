@@ -27,7 +27,7 @@
         LEFT JOIN m_department d ON u.department_id=d.department_id 
         WHERE u.role_id='2' AND u.status_id='1'");
         ?>
-            <table class="table table-hover" id="tbView" style="display: block;overflow: auto;white-space: nowrap;margin-top: 13px; !important">
+            <table class="table table-hover" id="tbView" style="overflow: auto;white-space: nowrap;margin-top: 13px; !important">
                 <thead>
                 <tr>
                     <th>ลำดับ</th>

@@ -15,7 +15,7 @@
             <h3 class="card-label"><?php echo $title;?></h3>
         </div>
         <div class="card-toolbar">
-            <a href="?url=officer/manage.php&title=เพิ่มข้อมูล" class="btn btn-primary font-weight-bolder mb-5">
+            <a href="?url=labor/manage.php&title=เพิ่มข้อมูล" class="btn btn-primary font-weight-bolder mb-5">
                 <span class="svg-icon svg-icon-md"><i class="flaticon2-plus"></i></span>เพิ่มข้อมูล</a>
         </div>
     </div>

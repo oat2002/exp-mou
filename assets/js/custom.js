@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
 
 $(function (){
     $('#tbView').dataTable({
+        "bAutoWidth": false,
         "order": [],
         fixedColumns: true,
         "scrollY": "550px",
@@ -56,6 +57,15 @@ $(function (){
         }
     });
 })
+
+$('.datepicker').datepicker({
+    rtl: KTUtil.isRTL(),
+    todayHighlight: true,
+    orientation: "bottom left",
+    autoclose: true,
+    templates: arrows,
+    format:'dd/mm/yyyy'
+});
 
 
 
