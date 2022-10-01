@@ -146,7 +146,7 @@ include 'template/header.php';
                         </li>
 
                         <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
-                            <a href="#" class="menu-link menu-toggle">
+                            <a href="labor" class="menu-link menu-toggle">
                                 <span class="svg-icon menu-icon">
 											<i class="flaticon-profile-1"></i>
 										</span>
@@ -580,5 +580,26 @@ include 'template/footer.php';
             "hideMethod": "fadeOut"
         };
         toastr.error("Delete data successfully", "ลบข้อมูลสำเร็จ");
+    }
+
+    function alertEditData(){
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "2000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+        toastr.warning("Edited data successfully", "แก้ไขข้อมูลสำเร็จ");
     }
 </script>

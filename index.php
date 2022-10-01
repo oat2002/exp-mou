@@ -38,6 +38,15 @@ $router->map("GET", "/officer", function () {
     require __DIR__ . '/backend/index.php';
 });
 
+$router->map("GET", "/labor", function () {
+    $url = "labor/view.php";
+    if (isset($_GET["url"])){
+        $url = $_GET["url"];
+    }
+    $title = "จัดการข้อมูลแรงงาน";
+    require __DIR__ . '/backend/index.php';
+});
+
 $router->map("GET", "/product/add", function (){
     $url = "product/manage.php";
     $title = "เพิ่มข้อมูล";
