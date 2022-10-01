@@ -47,6 +47,15 @@ $router->map("GET", "/labor", function () {
     require __DIR__ . '/backend/index.php';
 });
 
+$router->map("GET", "/employer", function () {
+    $url = "employer/view.php";
+    if (isset($_GET["url"])){
+        $url = $_GET["url"];
+    }
+    $title = "จัดการข้อมูลนายจ้าง";
+    require __DIR__ . '/backend/index.php';
+});
+
 $router->map("GET", "/product/add", function (){
     $url = "product/manage.php";
     $title = "เพิ่มข้อมูล";
