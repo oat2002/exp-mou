@@ -44,6 +44,14 @@ $router->map("GET", "/labor", function () {
         $url = $_GET["url"];
     }
     $title = "จัดการข้อมูลแรงงาน";
+});
+
+$router->map("GET", "/employer", function () {
+    $url = "employer/view.php";
+    if (isset($_GET["url"])){
+        $url = $_GET["url"];
+    }
+    $title = "จัดการข้อมูลนายจ้าง";
     require __DIR__ . '/backend/index.php';
 });
 
